@@ -1,0 +1,10 @@
+<h1>Search Page</h1>
+
+<form method="GET">
+    Enter name: <input type="text" name="name">
+    <input type="submit" value="Search">
+</form>
+
+{% if name %}
+    <p>You searched for {{ name }}</p>
+{% endif %}
